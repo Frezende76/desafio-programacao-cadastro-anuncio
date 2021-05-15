@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Anuncios</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Cadastro de anuncios</h1>
+        <h2>Desenvolvido por Fabricio Rezende</h2>
+    </div>
+   <main>
+         <section class="pagina-conteudo">
+            <form class="formulario">
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="valor">Entre com o anúncio :</label>
+                    <input class="formulario__campo" required= "required" type="text" maxlength="15" minlength="1" id="anuncio" autofocus>
+                </div>
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="valor">Entre com o nome do cliente :</label>
+                    <input class="formulario__campo" required= "required" type="text" maxlength="8" minlength="1" id="nomeCliente">
+                </div>
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="valor">Entre com a data de inicio:</label>
+                    <input class="formulario__campo"  required= "required" type="date" id="dataInicio">
+                </div>
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="valor">Entre com a data de termino:</label>
+                    <input class="formulario__campo"  required= "required" type="date" id="dataTermino">
+                </div>
+                <div class="formulario__grupo">
+                    <label class="formulario__label" for="valor">Entre com o valor investido : R$</label>
+                    <input class="formulario__campo" type="text" maxlength="8" minlength="1" id="invest">
+                </div>
+                    <button onclick="relatorio()" class="formulario__botao">Gerar relatorio</button>
+            </form>
+            </section>
+
+    </main>
+</body>
+<script src="js/cadastraAnuncio.js"></script>
+</html>
